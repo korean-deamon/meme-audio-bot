@@ -1,3 +1,12 @@
+---
+title: Meme Audio Bot
+emoji: 🎵
+colorFrom: indigo
+colorTo: blue
+sdk: docker
+pinned: false
+---
+
 # 🎵 Meme Audio Bot
 
 A powerful Telegram Inline Bot that allows users to search and send millions of meme sounds directly in any chat. The bot fetches live data from **MyInstants** and supports infinite scrolling.
