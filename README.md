@@ -14,6 +14,14 @@ A powerful Telegram Inline Bot that allows you to search and send millions of me
 - Python 3.10 or higher
 - A Telegram Bot Token from [@BotFather](https://t.me/botfather) (Inline Mode must be **ON**)
 
+### Telegram Bot Setup
+Before running the bot, you must enable **Inline Mode** in BotFather:
+1. Find [@BotFather](https://t.me/botfather) on Telegram.
+2. Send `/setinline` command.
+3. Select your bot from the list.
+4. Enter a placeholder text (e.g., `Search for meme sounds...`).
+5. Success! Your bot is now ready for inline queries.
+
 ### Installation
 1. **Clone the repository**:
    ```bash
