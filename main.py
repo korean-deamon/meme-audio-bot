@@ -117,7 +117,17 @@ async def inline_query_handler(inline_query: InlineQuery):
 async def handle(request):
     return web.Response(text="Bot is running!")
 
+from aiogram.client.session.aiohttp import AiohttpSession
+
 async def main() -> None:
+    # Use a custom session with longer timeout for Hugging Face
+    session = AiohttpSession(
+        timeout=120, # 2 minutes
+    )
+    # Re-initialize bot with the custom session
+    global bot
+    bot = Bot(token=BOT_TOKEN, session=session)
+
     # Set up a dummy web server for Hugging Face health check
     app = web.Application()
     app.router.add_get("/", handle)
