@@ -28,7 +28,7 @@ async def search_myinstants(query: str, page: int = 1):
             if response.status_code != 200:
                 return []
 
-            soup = BeautifulSoup(response.text, 'html.parser')
+            soup = BeautifulSoup(response.text, 'lxml')
             instants = soup.find_all('div', class_='instant')
             
             results = []
